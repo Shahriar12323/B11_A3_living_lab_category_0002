@@ -24,12 +24,12 @@
 
 </head>
 
-<body class="font-heading text-text_black m-1 ">
+<body class="font-heading text-text_black  overflow-x-hidden ">
     <!-- header section  -->
     <header class="  bg-linear-to-b from-white to-[#EFEBE3]">
         <!-- navbar -->
         <nav class=" ">
-            <div class="navbar ">
+            <div class="navbar container mx-auto ">
                 <!-- Left -->
                 <div class="flex-1">
                     <!-- Logo -->
@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <!-- Center -->
-                <div class=" navbar-center hidden lg:flex flex-auto justify-end  ">
+                <div class=" hidden lg:flex flex-1 justify-center  ">
                     <ul class="menu menu-horizontal px-1 ">
                         <li><a>Product</a></li>
                         <li><a>Services</a></li>
@@ -46,7 +46,7 @@
                 </div>
 
                 <!-- Right -->
-                <div class=" navbar-center hidden  lg:flex flex-auto justify-end gap-2">
+                <div class=" hidden lg:flex flex-1 justify-end gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -90,17 +90,18 @@
             <hr>
         </div>
         <!-- hero section  -->
-        <!-- text part -->
+        
         <div class="text-center mx-auto">
+            <!-- text part -->
             <div class=" mx-auto space-y-8 py-8">
                 <h1 class="text-5xl font-semibold">Freshness <span class="text-pri_color">You Can <br>
                         Count</span> On, Prices You’ll Love!</h1>
-                <p class="font-2xl ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+                <p class="text-xl max-w-3xl mx-auto ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
                     staples, we’ve got you
                     covered every day!</p>
             </div>
             <div class=" flex justify-center mx-auto">
-                <img src="./c2-assets/hero-vegetables.png" alt="hero-vegetables" >
+                <img src="./c2-assets/hero-vegetables.png" alt="hero-vegetables">
             </div>
         </div>
     </header>
@@ -111,8 +112,8 @@
             <h2 class="text-3xl  font-bold text-pri_color py-2">
                 service
             </h2>
-            <div class=" lg:flex gap-4 space-y-4">
-                <div class="card  bg-sec_color  shadow-sm h-80 w-98">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card  bg-sec_color  shadow-sm h-80 lg:w-96">
                     <figure class="px-10 pt-10">
                         <img src="./c2-assets/service.png" alt="24/7 hours service available logo"
                             class=" bg-white rounded-full p-4" />
@@ -122,7 +123,7 @@
                         <p>We are ready for 24/7 hours Services, any time we are ready to serve </p>
                     </div>
                 </div>
-                <div class="card bg-sec_color  shadow-sm h-80 w-98">
+                <div class="card bg-sec_color  shadow-sm h-80 lg:w-96">
                     <figure class="px-10 pt-10">
                         <img src="./c2-assets/delivery.png" alt="24/7 hours service available logo"
                             class=" bg-white rounded-full p-4" />
@@ -134,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="card bg-sec_color  shadow-sm h-80 w-98">
+                <div class="card bg-sec_color  shadow-sm h-80 lg:w-96">
                     <figure class="px-10 pt-10">
                         <img src="./c2-assets/healthy.png" alt="24/7 hours service available logo"
                             class=" bg-white rounded-full p-4" />
@@ -154,10 +155,10 @@
                     <h1 class="text-pri_color text-3xl font-bold">Popular Products</h1>
                 </div>
                 <!-- container section  -->
-                <div class="lg:flex gap-2 justify-between">
+                <div class="lg:flex gap-2  justify-center">
                     <!-- big card section  -->
                     <div
-                        class="space-y-2 bg-linear-to-b from-[#77DD65] to-green-100 lg:h-90 w-96 rounded-xl relative mb-6 ">
+                        class="space-y-2 bg-linear-to-b from-[#77DD65] to-green-100 lg:h-90 w-full lg:w-96 rounded-xl relative mb-6 ">
                         <div class=" px-6 py-6 space-y-2">
                             <h1 class=" text-2xl font-bold  text-white">30% OFF</h1>
                             <p>
@@ -170,7 +171,7 @@
                         </div>
                     </div>
                     <!-- small card  -->
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:w-192">
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:flex-1">
                         <div class="flex bg-[#FFFFFF] px-3 py-3 gap-3 rounded-xl ">
                             <div class="bg-sec_color rounded-xl">
                                 <img src="./c2-assets/onion.png" alt="">
@@ -329,6 +330,40 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <!-- Offer section  -->
+        <section class="md:container  mx-auto px-8 mb-14 ">
+            <h2 class="text-3xl  font-bold text-pri_color py-2">
+               Arrival & Offers
+            </h2>
+            <!-- offer card container -->
+           <div class=" lg:flex gap-4">
+ <!-- 20% card -->
+            <div class=" flex bg-[#115414] py-6 px-6 rounded-xl gap-3 mb-10 lg:w-6/11 ">
+                <div class=" lg:space-y-8 lg:py-6 py-2 space-y-2 w-1/2">
+                    <img src="./c2-assets/dawat-logo.png" alt="">
+                <button class=" btn border-none rounded-xl bg-[#63B76D] h-14  text-white text-xs lg:text-xl"> Cook Exotic Dishes</button>
+                <h1 class="text-white font-bold md:text-3xl lg:text-5xl">UP to 20% OFF</h1>
+                </div>
+                <div>
+                    <img src="./c2-assets/dawat-mock-up.png" alt="" class="w-full">
+                </div>
+
+            </div>
+            <!-- 40% card  -->
+             <div class=" flex-1 flex bg-[#102861] py-6 px-6 rounded-xl gap-3 mb-10">
+                <div class=" lg:space-y-8 lg:py-6 py-2 space-y-2 lg:w-3/6 w-4/6">
+                    <img src="./c2-assets/india-gate-logo.png" alt="">
+                <button class=" btn border-none rounded-xl bg-[#63B76D] h-14  text-white text-xs lg:text-xl"> World’s No.1 Rice</button>
+                <h1 class="text-white font-bold md:text-3xl lg:text-4xl">UP to 40% OFF</h1>
+                </div>
+                <div>
+                    <img src="./c2-assets/india-gate-mock-up.png" alt="" class="">
+                </div>
+
+            </div>
+
+            </div>
         </section>
     </main>
 </body>
